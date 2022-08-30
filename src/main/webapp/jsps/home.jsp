@@ -9,9 +9,9 @@
 </head>
 </head>
 <body>
-<h1 align="center">Welcome to Acada Learning, Calgary, Canada Office.</h1>
-<h1 align="center">We are developing and supporting quality Software Solutions to millions of clients.
-	We offer Training for DevOps with Linux and Cloud equipping IT Engineers for best performance. God Loves you. Everyone will be hired </h1>
+<h1 align="center">My name is Eseoghene, I live in Calgary, Canada Office.</h1>
+<h1 align="center">I am currently enrolled in Devops Master Class. I have to study for 26 hours weekly.
+	I am currently trying my best to succeed at this. God will help me. My desires will be granted. </h1>
 <hr>
 <br>
 	<h1><h3> Server Side IP Address </h3><br>
