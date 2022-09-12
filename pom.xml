@@ -97,13 +97,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>ACADA Learning Releases Nexus Repository</name>
-	      <url>http://3.19.240.208:8081/repository/tdbank_enterprise_app_release/</url>
+	      <url>http://3.19.240.208:8081/repository/tdbank_release2/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>ACADA Learning Snapshot Nexus Repository</name>
-	      <url>http://3.19.240.208:8081/repository/tdbank_enterprise_app_snapshot/</url>
+	      <url>http://3.19.240.208:8081/repository/td_bank_snapshot2/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
