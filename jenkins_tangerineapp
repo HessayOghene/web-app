@@ -34,3 +34,4 @@ sh "echo Deploy to Tomcat"
 deploy adapters: [tomcat9(credentialsId: 'tomcat-cred', path: '', url: 'http://18.222.22.146:8080/')], contextPath: 'grow', war: 'target/*war'
 }
 }
+}  
