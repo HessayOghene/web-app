@@ -1,0 +1,36 @@
+pipeline{
+agent {label 'demonode2'}
+tools{
+maven "maven3.8.5"
+}
+stages{
+stage('GitClone'){
+steps{
+sh "echo Git Clone"
+git credentialsId: 'gith-cred', url: 'https://github.com/HessayOghene/web-app.git'
+}
+}
+stage('Build'){
+steps{
+sh "echo Start of Build"
+sh "mvn package"
+}
+}
+stage('CodeQuality'){
+steps{
+sh "echo start sonarQube Test"
+sh "mvn sonar:sonar"
+}
+}
+stage('BackupArtifacts'){
+steps{
+sh "echo Nexus Backup"
+//sh "mvn deploy"
+}
+}
+stage('Deploytostage'){
+steps{
+sh "echo Deploy to Tomcat"
+deploy adapters: [tomcat9(credentialsId: 'tomcat-cred', path: '', url: 'http://18.222.22.146:8080/')], contextPath: 'grow', war: 'target/*war'
+}
+}
